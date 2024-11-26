@@ -8,8 +8,13 @@
     max-width: 80%;
     background-color: #F6F6F6;
 
-    box-shadow: 7px 7px 15px 0px #00000014;
-    border-radius: 20px 0px 0px 0px;
+    box-shadow: 7px 7px 15px 0px rgba(0,0,0,25%);
+    border-radius: 20px;
 
     padding: 8px 100px;
+}
+.formulario h2{
+    font-size: 32px;
+    font-weight: 400;
+    color:#212121;
 }
