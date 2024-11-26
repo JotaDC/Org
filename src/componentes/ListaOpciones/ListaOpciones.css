@@ -1,17 +1,13 @@
-.campo-texto{
-    margin:24px 0;
-    font-family: 'Montserrat', serif;
-}
-
-.campo-texto label{
+.lista-opciones label{
     font-family: 'Montserrat', serif;
     font-size: 18px;
     font-weight:600;
     display : block;
     margin-bottom: 8px;
+
 }
 
-.campo-texto input{
+.lista-opciones select{
     width: 100%;
     background-color: #ffffff;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.0);
@@ -19,5 +15,4 @@
     padding: 30px 20px;
     outline-color: #6278f7;
     font-size:16px;
-    box-sizing: border-box;
 }
