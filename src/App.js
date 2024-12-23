@@ -11,10 +11,40 @@ function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false)
   const [colaboradores, actualizarColaboradores] = useState([
     {
-      equipo: "Front End",
+      equipo: "Data Science",
       foto: "https://github.com/JotaDC.png",
       nombre: "Javier Cañete",
       puesto: "Programador"
+    },
+    {
+      equipo: "Front End",
+      foto: "https://github.com/harlandlohora.png",
+      nombre: "Harland Lohora",
+      puesto: "Instructor"
+    },
+    {
+      equipo: "Programación",
+      foto: "https://github.com/GenesysAluraLatam.png",
+      nombre: "Genesys Ronón",
+      puesto: "Desarrolladora de software e instructora"
+    },
+    {
+      equipo: "UX Diseño",
+      foto: "https://github.com/JeanmarieAluraLatam.png",
+      nombre: "Jeanmarie Quijada",
+      puesto: "Instructora en Alura Latam"
+    },
+    {
+      equipo: "Programación",
+      foto: "https://github.com/christianpva.png",
+      nombre: "Christian Velasco",
+      puesto: "Head de Alura e Instructor"
+    },
+    {
+      equipo: "Innovación y gestión",
+      foto: "https://github.com/JoseDarioGonzalezCha.png",
+      nombre: "Jose Gonzalez",
+      puesto: "Dev FullStack"
     }
 
   ])
