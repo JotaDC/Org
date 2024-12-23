@@ -61,6 +61,15 @@ function App() {
     //spread operator
     actualizarColaboradores([...colaboradores, colaborador])
   }
+  //Eliminar Colaborador
+  const eliminarColaborador = (colaborador) => {
+    console.log("Eliminar Colaborador", colaborador)
+    // //Filtrar colaboradores
+    // const nuevosColaboradores = colaboradores.filter((colaboradorActual) => colaboradorActual.nombre !== colaborador.nombre)
+    // //Actualizar colaboradores
+    // actualizarColaboradores(nuevosColaboradores)
+  }
+
   //Lista de equipos
   const equipos = [
     {
@@ -117,6 +126,7 @@ function App() {
           return <Equipo key={index}
             datos={equipo}
             colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
+            eliminarColaborador={eliminarColaborador}
           />
         })
       }
