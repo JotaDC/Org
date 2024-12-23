@@ -12,8 +12,8 @@ const Formulario =()=>{
     
     const manejarEnvio=(e)=>{
         e.preventDefault()
-        console.log("Manejar Envio: ")
-        const datosAEnviar={
+        console.log("Manejar Envio ")
+        let datosAEnviar={
             nombre:nombre,
             puesto:puesto,
             foto:foto,
