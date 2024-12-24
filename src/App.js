@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import {v4 as uuid} from 'uuid'
+import {v4 as uuid} from 'uuid';
 import './App.css';
 import Header from './componentes/Header/Header';
 import Formulario from './componentes/Formulario/Formulario';
 import MiOrg from './componentes/MiOrg';
 import Equipo from './componentes/Equipo';
 import Footer from './componentes/Footer';
-
 
 function App() {
   const [mostrarFormulario, actualizarMostrar] = useState(false)
@@ -100,7 +99,6 @@ function App() {
         colorSecundario: "#ffeedf"
       }
     ])
-
 
   //Ternario --> condicion ? seMuestra: noSeMuestra
   // condicion && seMuestra
