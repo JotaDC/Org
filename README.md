@@ -1,3 +1,4 @@
+# Pasos para  bajar e instalar  dependencias
 git clone
 npm install
 npm install react-icons
