@@ -1,10 +1,12 @@
 import "./Colaborador.css"
-import { IoIosCloseCircle } from "react-icons/io";
+import { IoIosCloseCircle,IoMdHeart ,IoIosHeartEmpty  } from "react-icons/io";
+
 
 const Colaborador = (props)=>{
-    const {nombre,puesto,foto,equipo, id}=props.datos
-    const {colorPrimario, eliminarColaborador}=props
+    const {nombre,puesto,foto,equipo, id,fav}=props.datos
+    const {colorPrimario, eliminarColaborador, like}=props
 
+    
     return <div className="colaborador">
         <IoIosCloseCircle className="eliminar" onClick={()=>eliminarColaborador(id)} />
         <div className="encabezado" style={{backgroundColor:colorPrimario}}>
@@ -13,6 +15,8 @@ const Colaborador = (props)=>{
         <div className="info">
             <h4>{nombre}</h4>
             <h5>{puesto}</h5>
+            {fav===true ? <IoMdHeart color="red" onClick={()=>like(id)}/>:<IoIosHeartEmpty onClick={()=>like(id)}/>}
+            
         </div>
     
     </div>
